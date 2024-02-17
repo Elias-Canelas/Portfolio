@@ -62,6 +62,9 @@
     footer nav {
       display: none;
     }
+    .article-container{
+        height: fit-content;
+    }
     .about-containers,
     .contact-info-upper-container,
     .btn-container {
