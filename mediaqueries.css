@@ -60,8 +60,7 @@
       font-size: 1rem;
     }
     footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
+      display: none;
     }
     .about-containers,
     .contact-info-upper-container,
@@ -86,7 +85,7 @@
       gap: 0.5rem;
       text-align: center;
     }
-    .section__pic-containter {
+    .section__pic-container{
       width: auto;
       height: 46vw;
       justify-content: center;
