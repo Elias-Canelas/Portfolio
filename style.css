@@ -311,6 +311,9 @@ section{
     margin-bottom: 2rem;
 }
 
+.exp-container{
+    height: 40vh;
+}
 .experience-details-container{
     display: flex;
     justify-content: center;
@@ -322,13 +325,13 @@ section{
     text-align: initial;
     flex-wrap: wrap;   
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 2rem;
     justify-content: space-around;
 }
 
 article{
     display: flex;
-    width: 10rem;
+    width: 20rem;
     justify-content: space-around;
     gap: 0.5rem;
 }
