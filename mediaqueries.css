@@ -232,8 +232,8 @@
   }
   .article-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 🎯 Two columns */
-    gap: 1.5rem 4rem; /* vertical + horizontal spacing */
+    grid-template-columns: repeat(3, 1fr); /* 🎯 Two columns */
+    gap: 1rem 1em; /* vertical + horizontal spacing */
     padding-bottom: 2rem;
     justify-items: start;
   }
