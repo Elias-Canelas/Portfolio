@@ -1,174 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Elias Canelas Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="mediaqueries.css">
-        <link rel="icon" href="./assets/favicon.jpg" type="image/jpeg">
-        <!-- Apple Touch Icon for iPhone and iPad -->
-        <link rel="apple-touch-icon" href="./assets/favicon.jpg">
-        <!-- Icon for Android devices -->
-        <link rel="icon" sizes="192x192" href="./assets/favicon.jpg">
-        <!-- Icon for Windows tiles -->
-        <meta name="msapplication-TileImage" content="./assets/favicon.jpg">
-    </head>
-    <body>
-        <nav id="desktop-nav">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elias Canelas Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" href="./assets/favicon.jpg" type="image/jpeg">
+    <!-- Apple Touch Icon for iPhone and iPad -->
+    <link rel="apple-touch-icon" href="./assets/favicon.jpg">
+    <!-- Icon for Android devices -->
+    <link rel="icon" sizes="192x192" href="./assets/favicon.jpg">
+    <!-- Icon for Windows tiles -->
+    <meta name="msapplication-TileImage" content="./assets/favicon.jpg">
+</head>
+
+<body>
+    <nav id="desktop-nav">
         <div class="logo">Elias Canelas</div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Elias Canelas</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </nav>
-        <nav id="hamburger-nav">
-            <div class="logo">Elias Canelas</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
-            </div> 
-        </nav>
-        <section id="profile">
-            <div class="section__pic-container">
-                <img src="./assets/EliasCanelasPortfolioPicture.jpg" alt="Elias Canelas Portfolio Picture">
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/EliasCanelasPortfolioPicture.jpg" alt="Elias Canelas Portfolio Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Elias Canelas</h1>
+            <p class="section__text__p2">Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/EliasCanelasResume.pdf')">Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
             </div>
-            <div class="section__text">
-                <p class="section__text__p1">Hello I'm</p>
-                <h1 class="title">Elias Canelas</h1>
-                <p class="section__text__p2">Software Developer</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('./assets/EliasCanelasResume.pdf')">Resume</button>
-                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
-                </div>
 
-            </div>
-        </section>
-        <section id="about">
-            <p class="section__text__p1">Get To Know More</p>
-            <h1 class="title">About Me</h1>
-            <div class="section-container">
-                <div class="about-details-container">
-                    <div class="about-containers">
-                        <div class="details-container">
-                            <img src="./assets/quality.png" alt="Experience icon" class="icon">
-                            <h3>Experience</h3>
-                            <p>3+ years<br>.NET Development</p>
-                        </div>
-                        <div class="details-container">
-                            <img src="./assets/mortarboard.png" alt="Education icon" class="icon">
-                            <h3>Education</h3>
-                            <p>Computer Science<br>Bachelor Degree<br>Weber State University</p>
-                        </div>
-                        <div class="details-container">
-                            <img src="./assets/quality.png" alt="Experience icon" class="icon">
-                            <h3>Experience</h3>
-                            <p>2+ years<br>React Native Mobile Development</p>
-                        </div>
-                    </div>
-                                            <div class="text-container">
-                        <p>
-                            Resourceful and results-driven <strong>Software Developer</strong> with hands-on experience building and modernizing full-stack applications using <strong>C#</strong>, <strong>ASP.NET</strong>, <strong>Entity Framework Core</strong>, and <strong>WinForms</strong>.
-                        </p>
-
-                        <p>
-                            Adept at transforming legacy systems into scalable, high-performance solutions, with a proven track record in streamlining warehouse and quoting operations. Skilled in both <strong>T-SQL</strong> and <strong>MySQL</strong>, designing efficient, secure, and maintainable database-driven applications.
-                        </p>
-
-                        <p>
-                            Passionate about continuous learning, clean code, and delivering intuitive user experiences. Known for collaborating effectively with cross-functional teams and end-users to gather feedback and implement impactful improvements.
-                        </p>
-
-                        <p>
-                            Whether architecting robust backends or enhancing system usability, I thrive on solving complex problems and driving innovation through technology.
-                        </p>
-
-                        <p>
-                            For me, software development is more than a profession — it’s a dynamic blend of creativity, precision, and the excitement of turning ideas into working solutions.
-                        </p>
-                        </div>
-
-                </div>
-            </div>
-            <img src="./assets/down-arrow.png" alt="Down Arrow" class="icon arrow" onclick="location.href='./#experience'">
-        </section>
-        <section id="experience">
-  <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Experience</h1>
-
-  <div class="experience-details-container">
-    <h2 class="experience-sub-title">Skills</h2>
-
-    <!-- Skill Category -->
-    <div class="skill-section">
-      <h4>Languages</h4>
-      <div class="skills-grid">
-        <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> C#</div>
-      </div>
-    </div>
-
-    <div class="skill-section">
-      <h4>Frontend</h4>
-      <div class="skills-grid">
-        <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> HTML</div>
-        <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> CSS</div>
-        <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> JavaScript</div>
-        <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> Bootstrap</div>
-      </div>
-    </div>
-
-    <div class="skill-section">
-      <h4>Backend</h4>
-      <div class="skills-grid">
-        <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> ASP.NET MVC</div>
-        <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> Entity Framework Core</div>
-      </div>
-    </div>
-
-    <div class="skill-section">
-      <h4>Database</h4>
-      <div class="skills-grid">
-        <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> T-SQL</div>
-        <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> MySQL</div>
-      </div>
-    </div>
-
-    <div class="skill-section">
-      <h4>Mobile</h4>
-      <div class="skills-grid">
-        <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> React Native</div>
-      </div>
-    </div>
-
-    <div class="skill-section">
-      <h4>Desktop</h4>
-      <div class="skills-grid">
-        <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> WinForms</div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-          
-        <section id="projects">
-            <p class="section__text__p1">Browse my recent</p>
-            <h1 class="title">Projects</h1>
-            <div class="experience-details-container">
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
                 <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/quality.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>3+ years<br>.NET Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/mortarboard.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Computer Science<br>Bachelor Degree<br>Weber State University</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/quality.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ years<br>React Native Mobile Development</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Resourceful and results-driven <strong>Software Developer</strong> with hands-on experience
+                        building and modernizing full-stack applications using <strong>C#</strong>,
+                        <strong>ASP.NET</strong>, <strong>Entity Framework Core</strong>, and <strong>WinForms</strong>.
+                    </p>
+
+                    <p>
+                        Adept at transforming legacy systems into scalable, high-performance solutions, with a proven
+                        track record in streamlining warehouse and quoting operations. Skilled in both
+                        <strong>T-SQL</strong> and <strong>MySQL</strong>, designing efficient, secure, and maintainable
+                        database-driven applications.
+                    </p>
+
+                    <p>
+                        Passionate about continuous learning, clean code, and delivering intuitive user experiences.
+                        Known for collaborating effectively with cross-functional teams and end-users to gather feedback
+                        and implement impactful improvements.
+                    </p>
+
+                    <p>
+                        Whether architecting robust backends or enhancing system usability, I thrive on solving complex
+                        problems and driving innovation through technology.
+                    </p>
+
+                    <p>
+                        For me, software development is more than a profession — it’s a dynamic blend of creativity,
+                        precision, and the excitement of turning ideas into working solutions.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <img src="./assets/down-arrow.png" alt="Down Arrow" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+
+        <div class="experience-details-container">
+            <h2 class="experience-sub-title">Skills</h2>
+
+            <!-- Skill Category -->
+            <div class="skill-section">
+                <h4>Languages</h4>
+                <div class="skills-grid">
+                    <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> C#</div>
+                </div>
+            </div>
+
+            <div class="skill-section">
+                <h4>Frontend</h4>
+                <div class="skills-grid">
+                    <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> HTML</div>
+                    <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> CSS</div>
+                    <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> JavaScript</div>
+                    <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> Bootstrap</div>
+                </div>
+            </div>
+
+            <div class="skill-section">
+                <h4>Backend</h4>
+                <div class="skills-grid">
+                    <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> ASP.NET MVC</div>
+                    <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> Entity Framework Core</div>
+                </div>
+            </div>
+
+            <div class="skill-section">
+                <h4>Database</h4>
+                <div class="skills-grid">
+                    <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> T-SQL</div>
+                    <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> MySQL</div>
+                </div>
+            </div>
+
+            <div class="skill-section">
+                <h4>Mobile</h4>
+                <div class="skills-grid">
+                    <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> React Native</div>
+                </div>
+            </div>
+
+            <div class="skill-section">
+                <h4>Desktop</h4>
+                <div class="skills-grid">
+                    <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> WinForms</div>
+                </div>
+            </div>
+            <div class="skill-section">
+            <h4>Soft Skills</h4>
+            <div class="skills-grid">
+                <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> Agile / Scrum</div>
+                <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> Team Collaboration</div>
+                <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> Problem Solving</div>
+                <div class="skill-item"><img src="./assets/checked.png" alt="Check" /> Communication</div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <p class="section__text__p1">Browse my recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
                 <div class="details-container color-container">
                     <h2 class="experience-sub-title project-title">Vehicle Maintenance Tracker</h2>
                     <p>Log In Info<br>tuser<br>Tu123456</p>
@@ -177,33 +196,34 @@
                             <button class="btn btn-color-2 project-btn">Reds Fix</button>
                         </a>
                     </div>
-                    
+
                 </div>
             </div>
+        </div>
+        <img src="./assets/down-arrow.png" alt="Down Arrow" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon">
+                <p><a href="mailto:eliasrojas3535@gmail.com">eliasrojas3535@gmail.com</a></p>
             </div>
-            <img src="./assets/down-arrow.png" alt="Down Arrow" class="icon arrow" onclick="location.href='./#contact'">
-        </section>
-        <section id="contact">
-            <p class="section__text__p1">Get in Touch</p>
-            <h1 class="title">Contact Me</h1>
-            <div class="contact-info-upper-container">
-                <div class="contact-info-container">
-                    <img src="./assets/email.png" alt="Email icon" class="icon contact-icon">
-                    <p><a href="mailto:eliasrojas3535@gmail.com">eliasrojas3535@gmail.com</a></p>
-                </div>
-            </div>
-        </section>
-        <script src="script.js"></script>
-        <footer>
-            <nav class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <p>Copyright &#169 Elias Canelas. All Rights Reserved.</p>
-        </footer>
-    </body>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <footer>
+        <nav class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p>Copyright &#169 Elias Canelas. All Rights Reserved.</p>
+    </footer>
+</body>
+
 </html>
