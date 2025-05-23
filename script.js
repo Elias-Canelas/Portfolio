@@ -1,17 +1,20 @@
 // Typed.js
 const typed = new Typed('#typing', {
   strings: [
-  'Full-Stack Problem Solver.',
-  'React Native & .NET Pro.',
-  'Turning Ideas into Code.'
-]
-,
+    'Full-Stack Dev.',
+    'React Native Dev.',
+    '.NET Engineer.',
+    'Code That Works.',
+    'From Idea to App.'
+  ],
+
   typeSpeed: 60,
-  backSpeed: 30,
+  backSpeed: 60,
   backDelay: 1000,
   startDelay: 300,
   loop: true,
 });
+
 
 // AOS Init
 AOS.init({
