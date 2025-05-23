@@ -1,273 +1,81 @@
-/* === Mobile First (<=600px) === */
-@media screen and (max-width: 600px) {
-  #contact, footer {
-    height: 40vh;
-  }
-
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-
-  article {
-    font-size: 1rem;
-  }
-
-  footer nav {
+/* === HIDE hamburger menu on desktop === */
+@media screen and (min-width: 601px) {
+  .hamburger {
     display: none;
   }
 
-  .article-container {
-    height: fit-content;
+  .mobile-nav {
+    display: none !important;
   }
+}
 
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-
-  .contact-info-container {
-    margin: 0;
-  }
-
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-
-  .logo {
-    font-size: 1.5rem;
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
   }
 
   .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
+    display: none !important;
   }
 
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .text-container {
-    text-align: justify;
-  }
-}
-
-/* === Tablets (<=1024px) === */
-@media screen and (max-width: 1024px) {
-  .article-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    height: auto;
-    padding-bottom: 2rem;
-  }
-
-  article {
-    flex: 0 1 40%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 0.75rem;
-    font-size: 1rem;
-    max-width: 300px;
-  }
-
-  #experience {
-    padding-bottom: 4rem;
-  }
-}
-
-/* === Below Large Desktop (<=1200px) === */
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-
-  #hamburger-nav {
-    display: flex;
-  }
-
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-
-  #profile,
-  .section-container {
+  .hamburger {
     display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--primary);
   }
 
-  .arrow {
+  .mobile-nav {
     display: none;
+    flex-direction: column;
+    background-color: #0b0c10;
+    padding: 1rem;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    z-index: 999;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
   }
 
-  section,
-  .section-container {
-    height: fit-content;
+  .mobile-nav.show {
+    display: flex;
   }
 
-  section {
-    margin: 0 5%;
+  .mobile-nav li {
+    list-style: none;
+    margin: 0.5rem 0;
   }
 
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
+  .mobile-nav a {
+    color: var(--primary);
+    font-size: 1.1rem;
   }
 
-  .about-containers {
-    margin-top: 0;
-  }
-}
-
-/* === Mid-Desktop (<=1400px) === */
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+  .mobile-nav a:hover {
+    color: var(--accent);
   }
 
-  .about-containers {
-    flex-wrap: wrap;
-  }
-
-  #contact,
-  #projects {
-    height: fit-content;
-  }
-}
-
-/* === Enhanced About Section (All Screens) === */
-#about {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-}
-
-.section-container {
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-details-container {
-  align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.about-containers {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  flex-wrap: wrap;
-}
-
-.details-container {
-  flex: 1 1 300px;
-  max-width: 400px;
-  min-height: 160px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.text-container {
-  max-width: 800px;
-  text-align: justify;
-  line-height: 1.6;
-  font-size: 1.1rem;
-  padding: 0 1rem;
-}
-
-/* === Wide Screens (>=1024px) === */
-@media screen and (min-width: 1024px) {
-  /* Widen the About section containers */
-  .about-containers {
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 3rem;
-  }
-
-  .details-container {
-    max-width: 480px;
-    width: 100%;
-  }
-
-  .text-container {
-    max-width: 1000px;
-    font-size: 1.15rem;
-    margin-top: 2rem;
-  }
-
-  #about .section-container {
+  .hero-buttons {
     flex-direction: column;
     align-items: center;
   }
 
-  .about-details-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
-  .article-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 🎯 Two columns */
-    gap: 1rem 1em; /* vertical + horizontal spacing */
-    padding-bottom: 2rem;
-    justify-items: start;
+  .dock {
+    bottom: 1rem;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    max-width: 90%;
+    flex-wrap: nowrap;
   }
 
-  article {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.1rem;
-    padding: 0.5rem 0;
+  .dock-button {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
   }
 
-  article .icon {
-    height: 32px;
-    width: 32px;
-    flex-shrink: 0;
-    object-fit: contain;
-  }
-}
-
-
-/* === Ultra-Wide Screens (>=1600px) === */
-@media screen and (min-width: 1600px) {
-  .text-container {
-    max-width: 60%;
-  }
-}
-
-/* === Large Desktop (>=1200px) === */
-@media screen and (min-width: 1200px) {
-  .section-container,
-  .details-container,
-  .about-containers {
-    max-width: 75%;
-    margin: 0 auto;
+  .hero-section {
+    padding-bottom: 6rem; /* Prevent overlap from dock */
   }
 }
