@@ -2,70 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Elias Canelas | Resume</title>
-  <link rel="stylesheet" href="resume.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Elias Canelas – Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0b0c10;
+      color: #c5c6c7;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #ffffff;
+      border-bottom: 2px solid #66fcf1;
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+    }
+    h3 {
+      margin-top: 1.2rem;
+      color: #66fcf1;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .contact {
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
-  <div class="resume-container">
-    <header>
-      <h1>Elias Canelas</h1>
-      <p>Ogden, UT 84403 · eliasrojas3535@gmail.com · 801.631.7099</p>
-    </header>
+  <h1>Elias Canelas</h1>
+  <p class="contact">Ogden, UT 84403 · eliasrojas3535@gmail.com · 801.631.7099</p>
 
-    <section>
-      <h2>Work Experience</h2>
-      <div class="job">
-  <h3>Programmer Analyst I — UST MFG LLC</h3>
-  <span>Feb 2023 – Present</span>
-  <ul>
-    <li>Developed and optimized in-house applications using C#, enhancing system efficiency and user experience.</li>
-    <li>Led the migration of a warehouse receiving system from WinForms (.NET 4.6) to ASP.NET 8 with Entity Framework Core, modernizing the application for improved performance and scalability.</li>
-    <li>Automated the warehouse receiving process, reducing processing time by several hours per user daily, allowing inventory to move directly to sampling instead of being delayed at the dock.</li>
-    <li>Converted a PHP-based application to ASP.NET 8 with Entity Framework Core, streamlining early quote processing and Bill of Materials approvals for quality and account managers, resulting in better scalability and increased speed.</li>
-    <li>Managed and enhanced a large quoting system used by Account Managers and Executives, improving real-time quote price approximations and maintaining system efficiency.</li>
-    <li>Facilitated user feedback sessions to identify and resolve bugs, continuously improving workflow efficiency and system usability.</li>
-  </ul>
-</div>
+  <div class="section">
+    <h2>Work Experience</h2>
+    <h3>Programmer Analyst I — UST MFG LLC <span style="float: right;">Feb 2023 – Present</span></h3>
+    <ul>
+      <li>Developed and optimized in-house applications using C#, enhancing system efficiency and user experience.</li>
+      <li>Led migration of a warehouse receiving system from WinForms (.NET 4.6) to ASP.NET 8 with Entity Framework Core.</li>
+      <li>Automated the warehouse receiving process, saving hours per day per user.</li>
+      <li>Rewrote a PHP-based quoting system in ASP.NET 8 + EF Core for scalability and performance.</li>
+      <li>Enhanced a large quoting platform used by Account Managers and Executives, improving price estimation workflows.</li>
+      <li>Facilitated user feedback sessions to improve UX and squash bugs.</li>
+    </ul>
 
-      <div class="job">
-        <h3>Inventory Clerk — Nutraceutical</h3>
-        <span>Aug 2019 – Feb 2023</span>
-        <ul>
-          <li>Managed order tracking and internal communication (Outlook, Teams).</li>
-          <li>Resolved day-to-day technical issues for warehouse staff.</li>
-        </ul>
-      </div>
-    </section>
+    <h3>Inventory Clerk — Nutraceutical <span style="float: right;">Aug 2019 – Feb 2023</span></h3>
+    <ul>
+      <li>Streamlined order tracking and communication via Outlook and Teams.</li>
+      <li>Resolved technical issues to support warehouse operations.</li>
+    </ul>
+  </div>
 
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>B.S. in Computer Science</strong> — Weber State University (2019–2024)</li>
-        <li><strong>High School Diploma</strong> — West Wendover High School (2014–2019)</li>
-      </ul>
-    </section>
+  <div class="section">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.S. in Computer Science</strong> — Weber State University (2019–2024)</li>
+      <li><strong>High School Diploma</strong> — West Wendover High School (2014–2019)</li>
+    </ul>
+  </div>
 
-    <section>
-      <h2>Skills & Technologies</h2>
-      <div class="skills-grid">
-        <span>C# / .NET / EF Core</span>
-        <span>ASP.NET 8 (MVC & API)</span>
-        <span>React Native</span>
-        <span>WinForms</span>
-        <span>PHP (legacy)</span>
-        <span>SQL / T-SQL / MySQL</span>
-        <span>Azure DevOps</span>
-        <span>GitHub</span>
-        <span>JavaScript</span>
-        <span>CSS / HTML</span>
-        <span>Python scripting</span>
-        <span>SCRUM / Agile</span>
-        <span>Team Communication</span>
-        <span>Solo Feature Ownership</span>
-      </div>
-    </section>
+  <div class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>C#, .NET, EF Core, ASP.NET MVC & Web API</li>
+      <li>React Native, WinForms, PHP (legacy)</li>
+      <li>SQL, T-SQL, MySQL, GitHub, Azure DevOps</li>
+      <li>JavaScript, HTML, CSS, Python scripting</li>
+      <li>Agile / Scrum, Solo & Team Projects</li>
+    </ul>
   </div>
 </body>
 </html>
