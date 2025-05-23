@@ -1,6 +1,11 @@
 // Typed.js
 const typed = new Typed('#typing', {
-  strings: ['Software Developer.', 'Mobile Engineer.', 'Full-Stack Coder.'],
+  strings: [
+  'Full-Stack Problem Solver.',
+  'React Native & .NET Pro.',
+  'Turning Ideas into Code.'
+]
+,
   typeSpeed: 60,
   backSpeed: 30,
   backDelay: 1000,
