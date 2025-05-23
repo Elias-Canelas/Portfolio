@@ -46,7 +46,10 @@
         <h2><span id="typing"></span></h2>
         <p>Full-stack developer with .NET and React Native firepower 🔥</p>
         <div class="hero-buttons">
-          <a href="./assets/EliasCanelasResume.pdf" target="_blank" class="btn btn-outline">Download CV</a>
+<!-- PDF Container (invisible) -->
+<div id="pdf-resume-target" style="position:absolute; left:-9999px; top:-9999px; visibility:hidden;"></div>
+<a href="#" onclick="generatePDF()" class="btn btn-outline">Download CV</a>
+
           <a href="#contact" class="btn btn-solid">Get In Touch</a>
         </div>
       </div>
@@ -144,5 +147,48 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+  async function generatePDF() {
+    try {
+      const response = await fetch('resume.html');
+      const htmlText = await response.text();
+
+      // Parse the response as HTML
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(htmlText, 'text/html');
+
+      // Extract only the resume content (not full HTML)
+      const resumeContent = doc.querySelector('.resume-container');
+
+      if (!resumeContent) {
+        alert("Resume content not found in resume.html");
+        return;
+      }
+
+      // Inject into index.html's hidden container
+      const target = document.getElementById('pdf-resume-target');
+      target.innerHTML = ''; // clear old
+      target.appendChild(resumeContent.cloneNode(true));
+
+      // Generate PDF
+      const opt = {
+        margin: 0.5,
+        filename: 'Elias_Canelas_Resume.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+      };
+
+      await html2pdf().set(opt).from(target).save();
+
+    } catch (err) {
+      console.error("Error generating PDF:", err);
+      alert("Failed to generate resume PDF.");
+    }
+  }
+</script>
+
+
   </body>
 </html>

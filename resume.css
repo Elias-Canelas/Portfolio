@@ -1,0 +1,103 @@
+:root {
+  --primary: #66fcf1;
+  --accent: #45a29e;
+  --bg: #0b0c10;
+  --fg: #c5c6c7;
+  --white: #ffffff;
+  --shadow: rgba(102, 252, 241, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #0f1116;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--shadow);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  font-family: 'Fira Code', monospace;
+}
+
+header p {
+  font-size: 1rem;
+  color: var(--fg);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  border-bottom: 1px dashed var(--accent);
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: var(--white);
+  margin-bottom: 0.25rem;
+}
+
+.job span {
+  font-size: 0.95rem;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.skills-grid span {
+  padding: 0.4rem 0.75rem;
+  background-color: #0b0c10;
+  border: 1px solid var(--primary);
+  border-radius: 0.5rem;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.skills-grid span:hover {
+  background-color: var(--primary);
+  color: #0b0c10;
+}
